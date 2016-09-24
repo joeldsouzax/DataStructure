@@ -12,9 +12,14 @@ public class LinkedListStack implements Stack {
 
     @Override
     public void push(int data) {
-        // using tertiary opertors
+        /*futher simplified solution
+         */
 
-        head = (head==null)?new Node(data):new Node(data,head);
+        head = new Node(data,head);
+
+       /* // using tertiary opertors
+
+        head = (head==null)?new Node(data):new Node(data,head);*/
         /*
         <=======using constructor===>
         if(head == null){
