@@ -1,3 +1,4 @@
+import ArrayStack.ArrayStack;
 import Clients.StackClient;
 import LinkedListStack.LinkedListStack;
 
@@ -10,10 +11,11 @@ import LinkedListStack.LinkedListStack;
 public class Main {
 
     public static void main(String[] args) {
-        LinkedListStack impLink = new LinkedListStack();
-        impLink.print();
+        //LinkedListStack impLink = new LinkedListStack();
+        ArrayStack ArrS = new ArrayStack(10);
         StackClient Client1 = new StackClient();
-        Client1.Stack(impLink);
+        Client1.Stack(ArrS);
+        //Client1.Stack(impLink);
 
     }
 }
